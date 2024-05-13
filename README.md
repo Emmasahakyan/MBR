@@ -19,4 +19,3 @@ gcc -c -g -Os -m64 -ffreestanding -Wall -Werror test.c -o test.o
 ld -static -Ttest.ld -nostdlib --nmagic -o test.elf test.o
 objcopy -O binary test.elf test.bin
 
-...
